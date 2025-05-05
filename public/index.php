@@ -1,21 +1,34 @@
 <!doctype html>
 <html lang="en">
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Blog</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
-  <link rel="stylesheet" href="/assets/css/main.css">
-</head>
+<?php require_once __DIR__ . '/src/views/components/meta/Head.php' ?>
 
 <body>
 
 
   <div class="wrapper">
-    <header class="header">Header</header>
-    <main class="main">Main</main>
-    <footer class="footer">Footer</footer>
+
+    <?php require_once __DIR__ . '/src/views/components/Header.php' ?>
+
+ 
+    <main class="main py-3">
+
+      <div class="container">
+        <div class="row">
+          <?php require_once __DIR__ . '/src/views/components/Content.php' ?>
+
+
+
+          <?php require_once __DIR__ . '/src/views/components/Sidebar.php' ?>
+
+        </div>
+      </div>
+
+    </main>
+
+
+    <?php require_once __DIR__ . '/src/views/components/Footer.php' ?>
+
   </div>
 
 
@@ -23,9 +36,6 @@
 
 
 
-
-  <h1>Hello, world!</h1>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
 </body>
 
 </html>
